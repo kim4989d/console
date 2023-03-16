@@ -1,0 +1,138 @@
+
+.MenuUnderLine {
+	font-size:12px;
+	color:#666666;
+	background-image: url(../images/menu_underline.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.TableBgBold {
+	font-family: "돋움";
+	font-size:12px;
+	color:109388;
+	background-image: url(../images/table_top_bg.gif);
+	background-repeat: repeat-x;
+	font-weight: bold;
+	line-height: 34px;
+}
+.TableBg {
+	font-size:12px;
+	color:109388;
+	background-image: url(../images/table_top_bg.gif);
+	background-repeat: repeat-x;
+	line-height: 34px;
+	text-align: center;
+}
+.TableSearchBg {
+	font-size:12px;
+	color:8b8b8b;
+	font-weight: bold;
+	background-image: url(../images/search_line01.gif);
+	background-repeat: repeat-x;
+	line-height: 32px;
+	text-align: center;
+}
+.TableBgText {
+	font-family: "돋움";
+	font-size:12px;
+	color:1c5180;
+	background-image: url(../images/table_center_bg.gif);
+	background-repeat: repeat-x;
+	height: 26px;
+	text-align: center;
+	background-position: bottom;
+
+}
+.TableBgBottomText {
+	font-family: "돋움";
+	font-size:12px;
+	color:1c5180;
+	background-image: url(../images/table_bottom_bg.gif);
+	background-repeat: repeat-x;
+	line-height: 26px;
+	text-align: center;
+	background-position: bottom;
+}
+.TableBgTextDate {
+	font-family: "돋움";
+	font-size:12px;
+	color:4ba749;
+	background-image: url(../images/table_center_bg.gif);
+	background-repeat: repeat-x;
+	line-height: 26px;
+	text-align: center;
+	background-position: bottom;
+}
+
+.TableBgBottomTextDate {
+	font-family: "돋움";
+	font-size:12px;
+	color:4ba749;
+	background-image: url(../images/table_bottom_bg.gif);
+	background-repeat: repeat-x;
+	line-height: 26px;
+	text-align: center;
+	background-position: bottom;
+}
+.PopupTitleBgWhite {
+	font-family: "돋움";
+	font-size:12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.InputLIneGraySearch {
+	font-size:11px;
+	font-family: "돋움";
+	border:1px solid #c7c7c7;
+	padding-right: 5px;
+	padding-left: 5px;
+	color: #a1a1a1;
+	height: 20px;
+}
+.InputLIneGray	{
+	border:1 solid #c7c7c7;
+	height: 20px;
+	color: #a1a1a1;
+	background-color:#F7F7F7;
+	font-size:11px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.InputLIneGrayColor {
+    border:1 solid #c7c7c7;
+	height: 18px;
+	color: #a1a1a1;
+	font-size:11px;
+	padding-left: 5px;
+}
+.InputLIneSelect  {
+		font-family:DotumChe;
+		font-size:9pt;
+	    color: #535353;
+		background-color:#FFFFFF;
+		text-align:left;
+		padding-left:5px;
+		padding-right:5px;
+	}
+.InputLIneGrayLogin {
+	font-family:DotumChe;
+	border:1 solid #b4b4b4;
+	height: 22px;
+	color: #a1a1a1;
+	background-color:#e8e8e8;
+	font-size:11px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

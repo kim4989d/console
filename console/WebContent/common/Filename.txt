@@ -1,0 +1,205 @@
+
+
+ 해상도 1024 * 768
+
+ 화면 전체 사이즈 - 950 * 630
+ top.html  - 950 * 37
+ left.html - 186 * 533
+ main.html - 764 * 533
+ bottom.html - 950 * 60
+
+ html 폴더 - 화면파일들이 들어있습니다. ( 경로=>  console/WebContent/common>html )
+ images 폴더 - 이미지 파일이 들어있습니다. ( 경로=>  console/WebContent/common>images )
+ css 폴더 - css파일이 들어있습니다. ( 경로=>  console/WebContent/common>css )
+
+
+
+===============================================>>>>  관리자 (admin)  <<<<======================================================
+
+  로그인창 ( login.html )
+  
+  =====팝업=====
+  
+
+
+-----------------------김명진 ----------------------------
+  NGS 계정 신청 등록 - pop_comm-g_join.html   ==>>> 사이즈변경(1000px -> 800px)
+
+
+
+
+-----------------------이충섭  ----------------------------
+① 신청현황 ( auth_list )
+
+  1) 작업신청 현황(Unix) - auth_list.html
+  2) 작업신청 현황(NT) - job_list.html
+  3) 계정 신청현황 - authuser_list.html
+  4) 시스템 사용 신청현황 - authsystem_list.html
+  5) 인증키 미사용 현황 - auth_not_list.html
+
+  =====팝업=====
+ 
+ 
+ -----------------------이충섭  ----------------------------
+ 작업내역 승인 - pop_001.html
+ NGS 시스템 요청 승인 - pop_user_system_details.html ==>>> 사이즈변경(1000px -> 800px)
+ NGS 사용자 계정 승인 - pop_user_details.html        ==>>> 사이즈변경(1000px -> 800px)
+ 반려사유 입력 - pop_returnuser_ok.html
+
+
+② 작업관리 ( working_list )
+
+  1) 작업중인 세션 - working_list.html
+  2) 작업완료 세션 - worked_list.html
+  3) 작업내역 현황(Unix) - job_agree_list_unix.html
+  4) 작업내역 현황(NT) - job_agree_list.html
+
+  =====팝업=====
+ 
+ 
+ 
+ 작업내역 승인 - pop_001.html
+ NGS 사용자 수정 - pop_user_edit.html ==>>> 사이즈변경(1000px -> 800px)
+ 작업내역 - pop_connection_req_result.html
+ 작업내역 - pop_job_content.html
+
+
+③ 서비스관리 ( service_list )
+
+  1) 서비스 관리현황 - wservice_list.html
+
+  =====팝업=====
+ 
+ 서비스 정보 수정 - pop_service_edit.html
+ 협력업체 현황 - pop_service_company.html
+ 담당자 - pop_service_oper_reg.html
+ 서비스 등록 - pop_service_reg.html
+
+
+④ 장비관리 ( system_svc_list )
+
+  1) 서비스 사용장비현황 - system_svc_list.html
+  2) 서비스 관리장비현황 - system_list.html
+
+  =====팝업=====
+ 
+ 시스템 수정 - pop_system_edit.html
+ 시스템 등록 - pop_system_reg.html
+
+⑤ 정책관리 ( policy_list )
+
+  1) 정책현황 - policy_list.html
+
+  =====팝업=====
+ 
+ 보안 정책 등록 - pop_policy_reg.html
+
+
+⑥ 사용자관리 ( user_list )
+
+  1) 사용자관리현황 - user_list.html
+
+  =====팝업=====
+ 
+ NGS 사용자 수정 - pop_user_edit.html              ==>>> 사이즈변경(1000px -> 800px)
+ NGS 사용자 등록 - pop_user_reg.html               ==>>> 사이즈변경(1000px -> 800px)
+ 사용자 시스템 현황 - pop_user_system_list.html    ==>>> 사이즈변경(1000px -> 800px)
+
+
+⑦ 코드관리 ( code_list )
+
+  1) 회사코드 현황 - company_list.html
+  2) 제조사코드 현황 - product_list.html
+  3) 금지명령어 현황 - code_list.html (전체보기)
+                       code_list_1.html (한 알파벳으로 보기)
+
+  =====팝업=====
+ 
+ 회사코드 입력 - pop_reg_edit_ins.html
+ 서비스별 개발자 현황 - pop_service_usr.html
+ 회사코드 입력 - pop_reg_ins.html
+ 제조사코드 입력 - pop_reg_edit_ins_01.html
+ 제조사코드 입력 - pop_reg_ins_01.html
+
+
+
+
+
+
+
+
+
+===============================================>>>>  사용자(user)  <<<<======================================================
+
+
+
+① 접속현황 ( User_uni_systemList_User )
+
+  1) UNIX 장비 현황  - user_uni_systemList.html
+  2) WINDOWS 장비 현황   - user_win_systemList.html
+
+
+  =====팝업=====
+ 
+ 사용할 시스템을 신청하여 주십시요 - pop_svc_reg.html
+ 작업내역등록 - pop_connection_req.html
+
+
+② Unix 작업등록 ( User_job_list_unix_User )
+
+  1) 작업내역현황 - job_list_unix.html
+
+  =====팝업=====
+ 
+ Uinx 작업내역 - pop_job_content_unix.html
+ 작업내역등록 - pop_connection_req.html
+
+
+③ Window 작업등록 ( User_job_list_User )
+
+  1) 작업내역현황 - job_list.html
+  2) 작업내용등록 버튼클릭 - job_reg.html
+
+  =====팝업=====
+ 
+ 작업내역 - pop_job_content.html
+
+
+④ 게시판 ( User_n_list_User )
+
+  1) 공지사항 - n_list.html
+
+
+
+
+
+===============================================>>>>  그밖의 화면들  <<<<======================================================
+
+
+
+
+① 메시지창 ( message )
+
+      참고로 보세요. 이런식으로 붙여넣으세요 - ex.html
+
+      현재 신청된 신청내역이 없습니다. - msg01.html
+      서비스 장비관리가 없습니다. - msg02.html
+      등록된 정책이 없습니다. - msg04.html
+      등록된 데이터가 없습니다. - msg05.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

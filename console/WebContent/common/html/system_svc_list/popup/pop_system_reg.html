@@ -1,0 +1,251 @@
+<html>
+<head>
+<!-- 팝업사이즈  500 * 426-->
+<title>팝업_장비관리_시스템 등록</title>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=EUC-KR">
+<META NAME="CONTENT-LANGUAGE" CONTENT="KR">
+<LINK REL='STYLESHEET' HREF='../../../css/skt_Form.css' TYPE='TEXT/CSS'>
+<LINK REL='STYLESHEET' HREF='../../../css/skt_Default.css' TYPE='TEXT/CSS'>
+<style type="text/css">
+<!--
+.style1 {	font-size: 11px
+}
+-->
+</style>
+</head>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+-->
+</style>
+<body>
+<table width=500 border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="46" background="../../../images/pop_500bg_01.jpg" class="PopupTitleBgWhite"><img src="../../../images/pop_img01.gif" align="absmiddle" style="margin-left:10px; margin-right:10px">시스템 등록</td>
+  </tr>
+  <tr>
+    <td height="4"></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="5"></td>
+        <td width="*" height="4" bgcolor="#9ab1cf"></td>
+        <td width="5"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="95" height="30" class="PopupBold">SYSTEM ID </td>
+                      <td class="PopupLine"><table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td><input type="text" class="inputLIneGrayColor" id="service_id" size="23" maxlength="15"></td>
+                          <td class="T11PopupText"><img src="../../../images/dot_2.gif" align="absmiddle" /><font color="ff3116">필수</font> <span class="style1">(중복하지 마세요.)</span> </td>
+                        </tr>
+                      </table></td>
+                    </tr>
+                    <tr>
+                      <td height="30" class="PopupBold">장비 설명</td>
+                      <td class="PopupLine"><table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td><input type="text" class="inputLIneGrayColor" id="service_id2" size="23" maxlength="15"></td>
+                          <td class="T11PopupText"><img src="../../../images/dot_2.gif" align="absmiddle" /><font color="ff3116">필수</font> <span class="style1">(중복하지 마세요.)</span> </td>
+                        </tr>
+                      </table></td>
+                    </tr>
+					<tr>
+                      <td height="30" class="PopupBold">Operating System</td>
+                      <td class="PopupLine"><table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td><table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td><input type="radio" name="os_type" value="U"   onclick="clickshow(1)" >
+                          UNIX 계열 
+                          <input type="radio" name="os_type" value="W"  checked onclick="clickshow(2)" >
+                          Windows 계열</td>
+                            </tr>
+                          </table></td>
+                          <td class="T11PopupText"><img src="../../../images/dot_2.gif" align="absmiddle" /><font color="ff3116">필수</font></td>
+                        </tr>
+                      </table></td>
+                    </tr>
+                    <tr>
+                      <td height="30" class="PopupBold">장비 IP</td>
+                      <td class="PopupLine"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td><input name="ip_addr1" type="text" class="inputLIneGrayColor" size="4" onKeyPress="onlyNumber();" maxlength="3" value="192">
+                            .
+                            <input name="ip_addr2" type="text" class="inputLIneGrayColor" size="4" onKeyPress="onlyNumber();" maxlength="3" value="168">
+                            .
+                            <input name="ip_addr3" type="text" class="inputLIneGrayColor" size="4" onKeyPress="onlyNumber();" maxlength="3" value="206">
+                            .
+                            <input name="ip_addr4" type="text" class="inputLIneGrayColor" size="4" onKeyPress="onlyNumber();" maxlength="3" value="244">
+                            &nbsp; PORT
+                            <input name="port_no" type="text" class="inputLIneGrayColor" size="7" onKeyPress="onlyNumber();" maxlength="7" value="1"><input name="fixport" type="checkbox" value="1"  onclick="fix()"> <font color="ff3116">*(고정포트사용)</font></td>
+                        </tr>
+                      </table></td>
+                    </tr>
+                    <tr>
+                      <td height="30" class="PopupBold">소속 서비스</td>
+                      <td class="PopupLine"><table width="405" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="155"><select name="service_id" class="inputLIneGrayColor">
+                              <option value="" selected>필수 선택 사항 </option>
+                              <option value="11ST" >11ST</option>
+                              <option value="AD_L4" >AD_L4</option>
+                              <option value="AMS/VCALS" >AMS/VCALS</option>
+                              <option value="AdMoA" >AdMoA</option>
+                              <option value="Airmarketer" >Airmarketer</option>
+                              <option value="COUPACK" >COUPACK</option>
+                              <option value="Coupack" >Coupack</option>
+                              <option value="ESM" >ESM</option>
+                              <option value="F/W" >F/W</option>
+                              <option value="IDS" >IDS</option>
+                              <option value="JUNE_BD" >JUNE_BD</option>
+                              <option value="MCP" >MCP</option>
+                              <option value="MCP5" >MCP5</option>
+                              <option value="MERCHANT" >MERCHANT</option>
+                              <option value="MONETACARD" >MONETACARD</option>
+                              <option value="MONETACASH" >MONETACASH</option>
+                              <option value="MPAS" >MPAS</option>
+                              <option value="MYPC" >MYPC</option>
+                              <option value="MobileBann" >MobileBann</option>
+                              <option value="MySmart" >MySmart</option>
+                              <option value="NATECODE" >NATECODE</option>
+                              <option value="NETWORK" >NETWORK</option>
+                              <option value="NGS" >NGS</option>
+                              <option value="O/M" selected>O/M</option>
+                              <option value="PAYMENT" >PAYMENT</option>
+                              <option value="PDAPortal" >PDAPortal</option>
+                              <option value="PHP" >PHP</option>
+                              <option value="SYNC" >SYNC</option>
+                              <option value="TCS" >TCS</option>
+                              <option value="TEST_TOBE" >TEST_TOBE</option>
+                              <option value="TMALL" >TMALL</option>
+                              <option value="TM_F/W" >TM_F/W</option>
+                              <option value="TM_NETWORK" >TM_NETWORK</option>
+                              <option value="Tmoney" >Tmoney</option>
+                              <option value="mBankVM" >mBankVM</option>
+                              <option value="mysmart" >mysmart</option>
+                              <option value="test_11" >test_11</option>
+                              <option value="test_svr" >test_svr</option>
+                              <option value="zz" >zz</option>
+                          </select></td>
+                          <td width="250" class="T11PopupText">&nbsp;</td>
+                        </tr>
+                      </table></td>
+                    </tr>
+                    <tr>
+                      <td height="30" class="PopupBold">담당자</td>
+                      <td class="PopupLine"><table width="405" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="155"><select name="oper_id" class="inputLIneGrayColor">
+                              <option value="">필수 선택 사항</option>
+                              <option value="1106005" >하재두</option>
+                              <option value="console" >콘솔</option>
+                              <option value="1102624" >최현정</option>
+                              <option value="br_oper" >천왕성</option>
+                              <option value="telarin" >천민태</option>
+                              <option value="1105297" >조정남</option>
+                              <option value="1102113" >임종순</option>
+                              <option value="admintemp" >임시</option>
+                              <option value="operator" >이준석</option>
+                              <option value="1103089" >이인복</option>
+                              <option value="1103416" >이광수</option>
+                              <option value="lks1022" >이광수</option>
+                              <option value="yhjkjy" >윤형진</option>
+                              <option value="1105688" >유준수</option>
+                              <option value="1104083" >양호수</option>
+                              <option value="1104027" >신정현</option>
+                              <option value="ss1290" >송경조</option>
+                              <option value="1108122" >석태경</option>
+                              <option value="jbpark01" >박종복</option>
+                              <option value="yongseoky" >박용석</option>
+                              <option value="1104175" >박병규</option>
+                              <option value="1104979" selected>김현정</option>
+                              <option value="twkim" >김태우</option>
+                              <option value="twkim123" >김태우</option>
+                              <option value="1107967" >김진구</option>
+                              <option value="1102081" >김건중</option>
+                              <option value="web21" >기태현</option>
+                              <option value="yckwon" >권용찬</option>
+                              <option value="dhkang" >강동한</option>
+                              <option value="ngsoper" >ngs운용</option>
+                            </select>                          </td>
+                          <td width="250" class="T11PopupText">담당자를 반드시 선택하여주십시요</td>
+                        </tr>
+                      </table></td>
+                    </tr>
+                    <tr>
+                      <td height="30" class="PopupBold">제조사</td>
+                      <td class="PopupLine"><table width="405" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="155"><select name="vendor_id" class="inputLIneGrayColor">
+                              <option value="">선택해주세요</option>
+                              <option value="etc" >조립서버</option>
+                              <option value="e-slim" >e-slim</option>
+                              <option value="SUN" >SUN</option>
+                              <option value="SAMSUNG" >SAMSUNG</option>
+                              <option value="SAEGAM" >SAEGAM</option>
+                              <option value="NT" >NT</option>
+                              <option value="NORTEL" >NORTEL</option>
+                              <option value="NETSCREEN" >NETSCREEN</option>
+                              <option value="NETCON" >NETCONNTINUM</option>
+                              <option value="JUNIPER" >JUNIPER</option>
+                              <option value="IBM" >IBM</option>
+                              <option value="HP" selected>HP</option>
+                              <option value="Extreme" >Extreme</option>
+                              <option value="EMC" >EMC</option>
+                              <option value="DELL" >DELL</option>
+                              <option value="Compaq " >Compaq </option>
+                              <option value="CISCO" >CISCO</option>
+                              <option value="ALTEON" >ALTEON</option>
+                            </select>                          </td>
+                          <td width="250" class="T11PopupText">&nbsp;</td>
+                        </tr>
+                      </table></td>
+                    </tr>
+                    <tr>
+                      <td height="30" class="PopupBold">기종</td>
+                      <td class="PopupLine"><input name="kom" type="text" class="inputLIneGrayColor" size="30" maxlength="25" value=""></td>
+                    </tr>
+                    <tr>
+                      <td height="30" class="PopupBold">상면위치</td>
+                      <td class="PopupLine"><input name="sang_pos" type="text" class="inputLIneGrayColor" size="30" maxlength="25" value=""></td>
+                    </tr>
+                    <tr>
+                      <td height="30" class="PopupBold">분전반 번호</td>
+                      <td class="PopupLine"><input name="bun_no" type="text" class="inputLIneGrayColor" size="30" maxlength="25" onKeyPress="onlyNumber();" value="">
+                    &nbsp;숫자만 입력하세요.</td>
+                    </tr>
+                    <tr>
+                      <td height="30" colspan="2" class="PopupLine"><font color="ff3116">* 필수 입력 사항은 반드시 입력해야 합니다.</font></td>
+                      </tr>
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+        </table></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td height="40" align="right"><a href="#"><img style="margin-right:6px" src="../../../images/btn_regist.gif"></a><a href="#"><img src="../../../images/btn_close.gif" width="42" height="22"></a></td>
+        <td></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>
+

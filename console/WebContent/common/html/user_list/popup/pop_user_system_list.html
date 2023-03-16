@@ -1,0 +1,211 @@
+<html>
+<head>
+<!-- 팝업사이즈  500 * 555-->
+<title>팝업_사용자관리_장비현황</title>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=EUC-KR">
+<META NAME="CONTENT-LANGUAGE" CONTENT="KR">
+<LINK REL='STYLESHEET' HREF='../../../css/skt_Form.css' TYPE='TEXT/CSS'>
+<LINK REL='STYLESHEET' HREF='../../../css/skt_Default.css' TYPE='TEXT/CSS'>
+</head>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+-->
+</style>
+<body>
+<table width=500 border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="46" background="../../../images/pop_500bg_01.jpg" class="PopupTitleBgWhite"><img src="../../../images/pop_img01.gif" align="absmiddle" style="margin-left:10px; margin-right:10px">사용자 시스템 현황</td>
+  </tr>
+  <tr>
+    <td height="4"></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="5"></td>
+        <td width="*" height="4" bgcolor="#9ab1cf"></td>
+        <td width="5"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="30" class="PopupLine"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td class="OrangeText"><strong>사용자 정보</strong></td>
+                    </tr>
+                  </table></td>
+                  </tr>
+                <tr>
+                  <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td height="30" class="PopupBold">사용자 이름</td>
+                      <td class="PopupLine"><input name="textfield" type="text" size="18" class="inputLIneGrayColor" readonly value="윤순영"></td>
+                      <td class="PopupBold">사용자 ID</td>
+                      <td class="PopupLine"><input name="uid" type="text" size="20" class="inputLIneGrayColor" readonly value="easymon2"></td>
+                    </tr>
+                    <tr>
+                      <td height="25" class="PopupBold">소속</td>
+                      <td class="PopupLine"><input name="textfield3" type="text" size="18" class="inputLIneGrayColor" readonly value="이지몬"></td>
+                      <td class="PopupBold">사용자 유형</td>
+                      <td class="PopupLine"><input name="textfield22" type="text" size="20" class="inputLIneGrayColor" readonly value="응급사용자"></td>
+                    </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td height="30" class="PopupLine"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td class="OrangeText"><strong>장비정보</strong></td>
+                    </tr>
+                  </table></td>
+                  </tr>
+                <tr>
+                  <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <colgroup>
+                        <col width="120">
+                        <col width="120">
+                        <col width="100">
+                        <col width="*">
+                        </colgroup>
+                        <tr class="TableBgBold">
+                          <td height="34" class="TableBg">Service ID</td>
+                          <td class="TableBg">Syetem ID</td>
+                          <td class="TableBg">접속기간</td>
+                          <td class="TableBg">구 분</td>
+                          </tr>
+                      </table></td>
+                    </tr>
+                    <tr>
+                      <td>
+					     <div style="height:312; overflow-y:scroll;"> 
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <colgroup>
+                        <col width="120">
+                        <col width="120">
+                        <col width="100">
+                        <col width="*">
+                        </colgroup>
+                        <tr>
+                          <td class="TableBgText"><input name="svc_id" type="text" size="15" class="inputLIneGrayColor" value="AMS/VCALS" ReadOnly></td>
+                          <td class="TableBgText"><input name="sys_id0" type="text" size="15" class="inputLIneGrayColor" value="amsdb1" ReadOnly></td>
+                          <td class="TableBgText"><input name="cal0" type="text" size="10" class="inputLIneGrayColor"  value="0000/00/00" ReadOnly><img style="margin-left:4px" src="../../../images/table_zoom.gif" align="absmiddle"></td>
+                          <td class="TableBgText"><select name="sType0" onChange="onChange(this,0)" class="InputLIneSelect">
+							<option value="C" SELECTED>접속별</option>
+							<option value="P" >기간별</option>
+                      </select><a href="#"><img src="../../../images/btn_delete.gif" border="0" align="absmiddle" style="margin-left:3px"></a></td>
+                          </tr>
+                        <tr>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                          <td class="TableBgText">&nbsp;</td>
+                        </tr>
+                      </table>
+					     </div></td>
+                    </tr>
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+        </table></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td height="40" align="right"><a href="#"><img style="margin-right:6px" src="../../../images/btn_modify1.gif"></a><a href="#"><img src="../../../images/btn_close.gif" width="42" height="22"></a></td>
+        <td></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>
+

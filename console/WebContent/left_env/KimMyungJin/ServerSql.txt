@@ -1,0 +1,51 @@
+
+//=========================================================================================
+//		장비 목록 불러 오기  (서비스 사용 장비 현황_장비 접속  )
+//=========================================================================================
+		// 관리자 및 운용자 (매니저)
+			
+		if (KIND.equals("A") || KIND.equals("O")){				// 관리자 및 운용자 (매니저)
+		
+		select b.service_name,a.system_name,a.reg_dt,						
+		ifnull(a.updt_dt,'') 									
+		updt_dt, a.service_id,a.system_id ,							
+			a.OSTYPE ,a.host_id,a.system_ip							
+		 from TBL_SYSTEM a left join 								
+				TBL_SERVICE b on a.service_id=b.service_id  				
+			where b.service_id is not null "+STR_AND);
+				
+		if (KIND.equals("O")) {									// 일반 사용자 
+		 and a.service_id in (select service_id from 						
+		 TBL_SVC_USER where charger_id='"+SID+"'"		
+		 order by " + str_order					  
+		
+		
+		}else if (KIND.equals("M") || KIND.equals("G")){
+		                
+			select   c.service_name, b.system_name, d.reg_dt, 					
+					ifnull(a.updt_dt,'') updt_dt, a.service_id,a.system_id  	
+			from T  BL_SYSTEM a left join											
+					TBL_SERVICE b on a.service_id=b.service_id 					
+			where   b.service_id is not null										
+		 	and d.  system_id = b.system_id 										
+		                                                                                                        
+		                                                                                        
+//===========================================================================                           
+//					장비 목록 불러 오기  (서비스 사용 장비 현황_삭제  )             
+//===========================================================================                           
+
+	
+		and  upper(a.service_id)=upper('"+div+"')";   // left 메뉴  값 
+		
+		
+		select b.service_id,a.system_name,a.system_id,a.reg_dt,					
+		ifnull(a.updt_dt,'') updt_dt,a.charger_id, a.OSTYPE,a.system_ip,a.HOST_ID 
+		from TBL_SYSTEM a left join TBL_SERVICE b on a.service_id=b.service_id 	
+		where   b.service_id is not null +STR_AND
+		
+		if (KIND.equals("O")) { //운용자일 경우 
+		and a.service_id in 														
+		(select service_id from TBL_SVC_USER where charger_id='"+userid+"')			
+			
+
+

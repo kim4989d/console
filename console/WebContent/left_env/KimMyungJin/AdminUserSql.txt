@@ -1,0 +1,74 @@
+//======================================================================================
+//									사용자 관리 목록 불러오기 
+//=====================================================================================
+		
+ 		if (div.equals("") || div.equals("ALL")){
+			select distinct a.user_id,a.name,c.COMPANY_NAME,					
+				a.cell_num,a.KIND,												
+					date_format(a.last_login_dt,'%Y/%m/%d %H:%i'),				
+							a.SESSION_POLICY_ID,								
+		 		ifnull(f.name,'담당자없음') as CNAME,a.ADMIT_FLAG 				
+		 	from TBL_USER a left join TBL_COMPANY c  							
+						on a.company_id = c.company_id 							
+						    left join TBL_USER f  on a.charger_id = f.user_id 	
+		 	where a.admit_flag='1' 												
+
+
+		if (KIND.equals("O")){ 													 //   관리자 일 경우 
+		
+		
+		 and a.kind != 'A' and a.kind!='O' 									
+		 and exists(select service_id 										 
+		 		from TBL_USER_SYSTEM c 											
+				where c.user_id = a.user_id and c.admit_flag='1' 				
+		 and exists(select service_id 										
+				from TBL_SVC_USER d 											
+				where c.service_id = d.service_id 								
+		 and d.charger_id = '"+user_id+"')) 									
+		}
+		
+  }else if(div.equals("admin") || div.equals("operator")) {						//   left 조건문 
+		
+		
+		select distinct a.user_id,a.name,c.COMPANY_NAME,						
+					a.cell_num,a.KIND,											
+				date_format(a.last_login_dt,'%Y/%m/%d %H:%i'),					
+					a.SESSION_POLICY_ID,										
+		 		ifnull(f.name,'담당자없음') as CNAME,a.ADMIT_FLAG 				
+		 from TBL_USER a left join 											 
+				TBL_COMPANY c  on a.company_id = c.company_id 					
+					left join TBL_USER f  on a.charger_id = f.user_id 			
+		 	where a.admit_flag='1' 												
+
+
+		if (div.equals("admin")){											   //    left 조건 문 
+		and a.KIND='A' 														
+		}else{
+		and a.KIND='O' 														
+		}
+		
+  }else{
+		select distinct a.user_id,a.name,b.COMPANY_NAME,						
+				a.cell_num,a.KIND,												
+						date_format(a.last_login_dt,'%Y/%m/%d %H:%i'),			
+							a.SESSION_POLICY_ID,								
+		 		ifnull(f.name,'담당자없음') as CNAME ,a.ADMIT_FLAG  				
+		 from TBL_USER a left join TBL_COMPANY b  							
+				on a.company_id =b.company_id 									
+					left join TBL_USER_SYSTEM c on a.user_id = c.user_id 		
+					left join TBL_USER f  on a.charger_id = f.user_id 			
+		 where a.admit_flag='1' and c.admit_flag = '1' 						
+
+
+
+//=======================================================================================
+//					사용자 관리 (시스템 목록 불러 주기 )
+//=======================================================================================
+						 		
+		
+			SELECT a.SERVICE_ID,a.SYSTEM_ID,										
+					a.EXP_DATE,IFNULL(a.CONN_TYPE,'C') AS  CONN_TYPE , b.host_id 	
+			FROM TBL_USER_SYSTEM a , TBL_SYSTEM b 									
+					WHERE  a.admit_flag='1' and 									
+			a.USER_ID =:userid and a.system_id = b.system_id  						 
+

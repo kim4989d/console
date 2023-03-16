@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+	
+	<servlet><!--로그인 LoginServlet-->
+		<servlet-name>LoginServlet</servlet-name>		
+		<display-name>LoginServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.LoginServlet</servlet-class>
+	</servlet>	
+	
+	<servlet><!--유저 페이지  UserMainServlet-->
+		<servlet-name>UserMainServlet</servlet-name>		
+		<display-name>UserMainServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.UserMainServlet</servlet-class>
+	</servlet>	
+	
+	
+
+<!-- 이충섭   -->
+
+	<servlet><!-- 신청현황   RequireServlet-->
+		<servlet-name>RequireServlet</servlet-name>		
+		<display-name>RequireServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.RequireServlet</servlet-class>
+	</servlet>	
+	
+	<servlet><!-- 사용자 관리  AdminServlet-->
+		<servlet-name>AdminServlet</servlet-name>
+		<display-name>AdminServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.AdminServlet</servlet-class>
+	</servlet>
+	
+
+<!-- 최승주  -->
+	<servlet><!-- 작업 관리(작업중 섹션)  WorkServlet-->
+		<servlet-name>WorkServlet</servlet-name>
+		<display-name>WorkServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.WorkServlet</servlet-class>
+	</servlet>
+	
+	<servlet><!-- 작업 관리(완료된 섹션)  WorkedServlet-->
+		<servlet-name>WorkedServlet</servlet-name>
+		<display-name>WorkedServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.WorkedServlet</servlet-class>
+	</servlet>
+
+
+
+<servlet><!-- 서비스관리 팝업   ServiceOperServlet-->
+		<servlet-name>ServiceOperServlet</servlet-name>
+		<display-name>ServiceOperServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.ServiceOperServlet</servlet-class>
+	</servlet>
+
+
+
+
+
+
+<servlet><!-- 서비스 관리  ServiceServlet-->
+		<servlet-name>ServiceServlet</servlet-name>
+		<display-name>ServiceServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.ServiceServlet</servlet-class>
+	</servlet>
+
+
+<servlet><!-- 회사 관리  CompanyServlet-->
+		<servlet-name>CompanyServlet</servlet-name>
+		<display-name>CompanyServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.CompanyServlet</servlet-class>
+	</servlet>
+
+
+<servlet><!-- 제품  관리  ProductServlet-->
+		<servlet-name>ProductServlet</servlet-name>
+		<display-name>ProductServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.ProductServlet</servlet-class>
+	</servlet>
+
+<servlet><!-- 서비스 등록  팝업   ServiceUPServlet-->
+		<servlet-name>ServiceUPServlet</servlet-name>
+		<display-name>ServiceUPServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.ServiceUPServlet</servlet-class>
+	</servlet>
+
+
+<!-- 김명진  -->
+<servlet><!-- 장비관리 ServerServlet-->
+		<servlet-name>ServerServlet</servlet-name>
+		<display-name>ServerServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.ServerServlet</servlet-class>
+	</servlet>
+	
+	<servlet><!-- 계정신청 ConsoleJoinServlet-->
+		<servlet-name>ConsoleJoinServlet</servlet-name>
+		<display-name>ConsoleJoinServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.ConsoleJoinServlet</servlet-class>
+	</servlet>
+	
+	<servlet><!-- 접속현황 장비현황 unix UserUniSystemListServlet -->
+		<servlet-name>UserUniSystemListServlet</servlet-name>
+		<display-name>UserUniSystemListServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.UserUniSystemListServlet</servlet-class>
+	</servlet>	
+
+
+	<servlet><!-- 작업내역 등록 -->
+		<servlet-name>ConnectionReqServlet</servlet-name>
+		<display-name>ConnectionReqServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.ConnectionReqServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LeftServlet</servlet-name>
+		<display-name>LeftServlet</display-name>
+		<description></description>
+		<servlet-class>
+		console.common.servlet.LeftServlet</servlet-class>
+	</servlet>	
+
+	
+	<servlet-mapping><!-- 로그인    LoginServlet-->
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping><!-- 신청현황   RequireServlet-->
+		<servlet-name>RequireServlet</servlet-name>
+		<url-pattern>/require.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping><!-- 사용자 관리 -->
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/admin.do</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- 최승주  -->
+	
+	<servlet-mapping><!-- 작업 관리(작업중 섹션)  WorkServlet-->
+		<servlet-name>WorkServlet</servlet-name>
+		<url-pattern>/work.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping><!-- 작업 관리(완료된 섹션)  WorkedServlet-->
+		<servlet-name>WorkedServlet</servlet-name>
+		<url-pattern>/worked.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping><!-- 서비스 관리  ServiceServlet-->
+		<servlet-name>ServiceServlet</servlet-name>
+		<url-pattern>/service.do</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet-mapping><!-- 회사  관리  CompanyServlet-->
+		<servlet-name>CompanyServlet</servlet-name>
+		<url-pattern>/company.do</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping><!-- 제품  관리  ProductServlet-->
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/product.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping><!-- 서비스   관리 팝업  ServiceOperServlet-->
+		<servlet-name>ServiceOperServlet</servlet-name>
+		<url-pattern>/serviceoperreg.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping><!-- 서비스   등록  팝업  ServiceUPServlet-->
+		<servlet-name>ServiceUPServlet</servlet-name>
+		<url-pattern>/serviceupdate.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping><!-- 장비 관리 ServerServlet-->
+		<servlet-name>ServerServlet</servlet-name>
+		<url-pattern>/server.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping><!-- 계정신청  ServerServlet-->
+			<servlet-name>ConsoleJoinServlet</servlet-name>
+			<url-pattern>/consolejoin.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping><!-- 접속현황 장비현황 unix UserUniSystemListServlet -->
+			<servlet-name>UserUniSystemListServlet</servlet-name>
+			<url-pattern>/userunisystemlist.do</url-pattern>
+	</servlet-mapping>		
+	
+	<servlet-mapping><!-- 접속현황 장비현황 unix ConnectionReqServlet -->
+			<servlet-name>ConnectionReqServlet</servlet-name>
+			<url-pattern>/connectionreq.do</url-pattern>
+	</servlet-mapping>			
+	
+		<servlet-mapping><!-- 유저 페이지  UserMainServlet -->
+			<servlet-name>UserMainServlet</servlet-name>
+			<url-pattern>/usermain.do</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+			<servlet-name>LeftServlet</servlet-name>
+			<url-pattern>/LeftServlet</url-pattern>
+		</servlet-mapping>	
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
