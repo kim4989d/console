@@ -23,6 +23,14 @@ public class Method_3 {
 		//set 했으니 get 해야지 응?
 		System.out.println(me.getName());
 		
+		//친구이름으로 바뀌어서 출력하시오 
+		
+		//package:question.qu1
+//		class:Ex1_1
+//		이름 나이 주소 지역변수 출력
+//		이름 나이 주소 전역변수 출력
+//		이름 나이 주소 get,set  출력
+//		55분까지 휴식 ㅍ  
 		
 	}
 }

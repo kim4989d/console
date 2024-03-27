@@ -27,6 +27,8 @@ public class Localvar_1 {
 		
 		
 		System.out.println(local.name);
+		//이런식으로 값을 저장하고 유지한다 (지역변수는값이 없어지므로)
+		//나이 지역변수만들고 출력 하고 전역변수 만들고 출력 
 		
 	}
 }

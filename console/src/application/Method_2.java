@@ -26,6 +26,10 @@ public class Method_2 {
 		me.getName();
 		//말을할수있게하는 출력메소드 syso
 		System.out.println(me.getName());
-//	나이 주소 출력 get메소드 
+//	나이 주소 출력 get메소드    
+		
+		//40분에 휴식 
+		
+		
 	}
 }

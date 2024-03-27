@@ -10,6 +10,9 @@ public class Var_1 {
 		name="홍길동";
 		
 		int age=10;
+		
+		//+10 -10 현재나이 출력 
+		
 
 	}
 }
