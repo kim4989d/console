@@ -18,6 +18,7 @@ public class CommandManager {
 		
 		
 		
+		
 		map.put("test",          "console.list.cmd.TestCmd");
 		
 		
