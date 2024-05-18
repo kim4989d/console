@@ -2,69 +2,82 @@
 <!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
 
 <web-app>
-	
-	<servlet><!--·Î±×ÀÎ LoginServlet-->
-		<servlet-name>LoginServlet</servlet-name>		
+
+
+
+	<servlet><!--ï¿½Î±ï¿½ï¿½ï¿½ LoginServlet -->
+		<servlet-name>LoginServlet</servlet-name>
 		<display-name>LoginServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.LoginServlet</servlet-class>
-	</servlet>	
-	
-	<servlet><!--À¯Àú ÆäÀÌÁö  UserMainServlet-->
-		<servlet-name>UserMainServlet</servlet-name>		
+			console.common.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+
+	<servlet><!--ï¿½Î±ï¿½ï¿½ï¿½ TestServlet -->
+		<servlet-name>TestServlet</servlet-name>
+		<display-name>TestServlet</display-name>
+		<description></description>
+		<servlet-class>
+			console.common.servlet.TestServlet</servlet-class>
+	</servlet>
+
+
+
+	<servlet><!--ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ UserMainServlet -->
+		<servlet-name>UserMainServlet</servlet-name>
 		<display-name>UserMainServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.UserMainServlet</servlet-class>
-	</servlet>	
-	
-	
+			console.common.servlet.UserMainServlet</servlet-class>
+	</servlet>
 
-<!-- ÀÌÃæ¼·   -->
 
-	<servlet><!-- ½ÅÃ»ÇöÈ²   RequireServlet-->
-		<servlet-name>RequireServlet</servlet-name>		
+
+	<!-- ï¿½ï¿½ï¿½æ¼· -->
+
+	<servlet><!-- ï¿½ï¿½Ã»ï¿½ï¿½È² RequireServlet -->
+		<servlet-name>RequireServlet</servlet-name>
 		<display-name>RequireServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.RequireServlet</servlet-class>
-	</servlet>	
-	
-	<servlet><!-- »ç¿ëÀÚ °ü¸®  AdminServlet-->
+			console.common.servlet.RequireServlet</servlet-class>
+	</servlet>
+
+	<servlet><!-- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ AdminServlet -->
 		<servlet-name>AdminServlet</servlet-name>
 		<display-name>AdminServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.AdminServlet</servlet-class>
+			console.common.servlet.AdminServlet</servlet-class>
 	</servlet>
-	
 
-<!-- ÃÖ½ÂÁÖ  -->
-	<servlet><!-- ÀÛ¾÷ °ü¸®(ÀÛ¾÷Áß ¼½¼Ç)  WorkServlet-->
+
+	<!-- ï¿½Ö½ï¿½ï¿½ï¿½ -->
+	<servlet><!-- ï¿½Û¾ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½Û¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½) WorkServlet -->
 		<servlet-name>WorkServlet</servlet-name>
 		<display-name>WorkServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.WorkServlet</servlet-class>
+			console.common.servlet.WorkServlet</servlet-class>
 	</servlet>
-	
-	<servlet><!-- ÀÛ¾÷ °ü¸®(¿Ï·áµÈ ¼½¼Ç)  WorkedServlet-->
+
+	<servlet><!-- ï¿½Û¾ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½Ï·ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½) WorkedServlet -->
 		<servlet-name>WorkedServlet</servlet-name>
 		<display-name>WorkedServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.WorkedServlet</servlet-class>
+			console.common.servlet.WorkedServlet</servlet-class>
 	</servlet>
 
 
 
-<servlet><!-- ¼­ºñ½º°ü¸® ÆË¾÷   ServiceOperServlet-->
+	<servlet><!-- ï¿½ï¿½ï¿½ñ½º°ï¿½ï¿½ï¿½ ï¿½Ë¾ï¿½ ServiceOperServlet -->
 		<servlet-name>ServiceOperServlet</servlet-name>
 		<display-name>ServiceOperServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.ServiceOperServlet</servlet-class>
+			console.common.servlet.ServiceOperServlet</servlet-class>
 	</servlet>
 
 
@@ -72,170 +85,188 @@
 
 
 
-<servlet><!-- ¼­ºñ½º °ü¸®  ServiceServlet-->
+	<servlet><!-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ServiceServlet -->
 		<servlet-name>ServiceServlet</servlet-name>
 		<display-name>ServiceServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.ServiceServlet</servlet-class>
+			console.common.servlet.ServiceServlet</servlet-class>
 	</servlet>
 
 
-<servlet><!-- È¸»ç °ü¸®  CompanyServlet-->
+	<servlet><!-- È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ CompanyServlet -->
 		<servlet-name>CompanyServlet</servlet-name>
 		<display-name>CompanyServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.CompanyServlet</servlet-class>
+			console.common.servlet.CompanyServlet</servlet-class>
 	</servlet>
 
 
-<servlet><!-- Á¦Ç°  °ü¸®  ProductServlet-->
+	<servlet><!-- ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½ ProductServlet -->
 		<servlet-name>ProductServlet</servlet-name>
 		<display-name>ProductServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.ProductServlet</servlet-class>
+			console.common.servlet.ProductServlet</servlet-class>
 	</servlet>
 
-<servlet><!-- ¼­ºñ½º µî·Ï  ÆË¾÷   ServiceUPServlet-->
+	<servlet><!-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ë¾ï¿½ ServiceUPServlet -->
 		<servlet-name>ServiceUPServlet</servlet-name>
 		<display-name>ServiceUPServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.ServiceUPServlet</servlet-class>
+			console.common.servlet.ServiceUPServlet</servlet-class>
 	</servlet>
 
 
-<!-- ±è¸íÁø  -->
-<servlet><!-- Àåºñ°ü¸® ServerServlet-->
+	<!-- ï¿½ï¿½ï¿½ï¿½ï¿½ -->
+	<servlet><!-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ServerServlet -->
 		<servlet-name>ServerServlet</servlet-name>
 		<display-name>ServerServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.ServerServlet</servlet-class>
+			console.common.servlet.ServerServlet</servlet-class>
 	</servlet>
-	
-	<servlet><!-- °èÁ¤½ÅÃ» ConsoleJoinServlet-->
+
+	<servlet><!-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã» ConsoleJoinServlet -->
 		<servlet-name>ConsoleJoinServlet</servlet-name>
 		<display-name>ConsoleJoinServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.ConsoleJoinServlet</servlet-class>
+			console.common.servlet.ConsoleJoinServlet</servlet-class>
 	</servlet>
-	
-	<servlet><!-- Á¢¼ÓÇöÈ² ÀåºñÇöÈ² unix UserUniSystemListServlet -->
+
+	<servlet><!-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È² ï¿½ï¿½ï¿½ï¿½ï¿½È² unix UserUniSystemListServlet -->
 		<servlet-name>UserUniSystemListServlet</servlet-name>
 		<display-name>UserUniSystemListServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.UserUniSystemListServlet</servlet-class>
-	</servlet>	
+			console.common.servlet.UserUniSystemListServlet</servlet-class>
+	</servlet>
 
 
-	<servlet><!-- ÀÛ¾÷³»¿ª µî·Ï -->
+	<servlet><!-- ï¿½Û¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ -->
 		<servlet-name>ConnectionReqServlet</servlet-name>
 		<display-name>ConnectionReqServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.ConnectionReqServlet</servlet-class>
+			console.common.servlet.ConnectionReqServlet</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>LeftServlet</servlet-name>
 		<display-name>LeftServlet</display-name>
 		<description></description>
 		<servlet-class>
-		console.common.servlet.LeftServlet</servlet-class>
-	</servlet>	
+			console.common.servlet.LeftServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>TestServlet</servlet-name>
+		<display-name>TestServlet</display-name>
+		<description></description>
+		<servlet-class>console.common.servlet.TestServlet</servlet-class>
+	</servlet>
 
-	
-	<servlet-mapping><!-- ·Î±×ÀÎ    LoginServlet-->
+
+
+
+	<servlet-mapping><!-- ï¿½Î±ï¿½ï¿½ï¿½ LoginServlet -->
+		<servlet-name>TestServlet</servlet-name>
+		<url-pattern>/test.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping><!-- ï¿½Î±ï¿½ï¿½ï¿½ LoginServlet -->
 		<servlet-name>LoginServlet</servlet-name>
 		<url-pattern>/login.do</url-pattern>
 	</servlet-mapping>
-	
-	<servlet-mapping><!-- ½ÅÃ»ÇöÈ²   RequireServlet-->
+
+	<servlet-mapping><!-- ï¿½ï¿½Ã»ï¿½ï¿½È² RequireServlet -->
 		<servlet-name>RequireServlet</servlet-name>
 		<url-pattern>/require.do</url-pattern>
 	</servlet-mapping>
 
-	<servlet-mapping><!-- »ç¿ëÀÚ °ü¸® -->
+	<servlet-mapping><!-- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ -->
 		<servlet-name>AdminServlet</servlet-name>
 		<url-pattern>/admin.do</url-pattern>
 	</servlet-mapping>
-	
-	
-	
-	<!-- ÃÖ½ÂÁÖ  -->
-	
-	<servlet-mapping><!-- ÀÛ¾÷ °ü¸®(ÀÛ¾÷Áß ¼½¼Ç)  WorkServlet-->
+
+
+
+	<!-- ï¿½Ö½ï¿½ï¿½ï¿½ -->
+
+	<servlet-mapping><!-- ï¿½Û¾ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½Û¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½) WorkServlet -->
 		<servlet-name>WorkServlet</servlet-name>
 		<url-pattern>/work.do</url-pattern>
 	</servlet-mapping>
-	
-	<servlet-mapping><!-- ÀÛ¾÷ °ü¸®(¿Ï·áµÈ ¼½¼Ç)  WorkedServlet-->
+
+	<servlet-mapping><!-- ï¿½Û¾ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½Ï·ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½) WorkedServlet -->
 		<servlet-name>WorkedServlet</servlet-name>
 		<url-pattern>/worked.do</url-pattern>
 	</servlet-mapping>
-	
-	<servlet-mapping><!-- ¼­ºñ½º °ü¸®  ServiceServlet-->
+
+	<servlet-mapping><!-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ServiceServlet -->
 		<servlet-name>ServiceServlet</servlet-name>
 		<url-pattern>/service.do</url-pattern>
 	</servlet-mapping>
-	
-	
-	
-	<servlet-mapping><!-- È¸»ç  °ü¸®  CompanyServlet-->
+
+
+
+	<servlet-mapping><!-- È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ CompanyServlet -->
 		<servlet-name>CompanyServlet</servlet-name>
 		<url-pattern>/company.do</url-pattern>
 	</servlet-mapping>
-	
-	
-	<servlet-mapping><!-- Á¦Ç°  °ü¸®  ProductServlet-->
+
+
+	<servlet-mapping><!-- ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½ ProductServlet -->
 		<servlet-name>ProductServlet</servlet-name>
 		<url-pattern>/product.do</url-pattern>
 	</servlet-mapping>
-	
-	<servlet-mapping><!-- ¼­ºñ½º   °ü¸® ÆË¾÷  ServiceOperServlet-->
+
+	<servlet-mapping><!-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ë¾ï¿½ ServiceOperServlet -->
 		<servlet-name>ServiceOperServlet</servlet-name>
 		<url-pattern>/serviceoperreg.do</url-pattern>
 	</servlet-mapping>
-	
-	<servlet-mapping><!-- ¼­ºñ½º   µî·Ï  ÆË¾÷  ServiceUPServlet-->
+
+	<servlet-mapping><!-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ë¾ï¿½ ServiceUPServlet -->
 		<servlet-name>ServiceUPServlet</servlet-name>
 		<url-pattern>/serviceupdate.do</url-pattern>
 	</servlet-mapping>
-	
-	<servlet-mapping><!-- Àåºñ °ü¸® ServerServlet-->
+
+	<servlet-mapping><!-- ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ServerServlet -->
 		<servlet-name>ServerServlet</servlet-name>
 		<url-pattern>/server.do</url-pattern>
 	</servlet-mapping>
-	
-	<servlet-mapping><!-- °èÁ¤½ÅÃ»  ServerServlet-->
-			<servlet-name>ConsoleJoinServlet</servlet-name>
-			<url-pattern>/consolejoin.do</url-pattern>
+
+	<servlet-mapping><!-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã» ServerServlet -->
+		<servlet-name>ConsoleJoinServlet</servlet-name>
+		<url-pattern>/consolejoin.do</url-pattern>
 	</servlet-mapping>
 
-	<servlet-mapping><!-- Á¢¼ÓÇöÈ² ÀåºñÇöÈ² unix UserUniSystemListServlet -->
-			<servlet-name>UserUniSystemListServlet</servlet-name>
-			<url-pattern>/userunisystemlist.do</url-pattern>
-	</servlet-mapping>		
-	
-	<servlet-mapping><!-- Á¢¼ÓÇöÈ² ÀåºñÇöÈ² unix ConnectionReqServlet -->
-			<servlet-name>ConnectionReqServlet</servlet-name>
-			<url-pattern>/connectionreq.do</url-pattern>
-	</servlet-mapping>			
-	
-		<servlet-mapping><!-- À¯Àú ÆäÀÌÁö  UserMainServlet -->
-			<servlet-name>UserMainServlet</servlet-name>
-			<url-pattern>/usermain.do</url-pattern>
+	<servlet-mapping><!-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È² ï¿½ï¿½ï¿½ï¿½ï¿½È² unix UserUniSystemListServlet -->
+		<servlet-name>UserUniSystemListServlet</servlet-name>
+		<url-pattern>/userunisystemlist.do</url-pattern>
 	</servlet-mapping>
-		<servlet-mapping>
-			<servlet-name>LeftServlet</servlet-name>
-			<url-pattern>/LeftServlet</url-pattern>
-		</servlet-mapping>	
-	
-	
+
+	<servlet-mapping><!-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È² ï¿½ï¿½ï¿½ï¿½ï¿½È² unix ConnectionReqServlet -->
+		<servlet-name>ConnectionReqServlet</servlet-name>
+		<url-pattern>/connectionreq.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping><!-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ UserMainServlet -->
+		<servlet-name>UserMainServlet</servlet-name>
+		<url-pattern>/usermain.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LeftServlet</servlet-name>
+		<url-pattern>/LeftServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestServlet</servlet-name>
+		<url-pattern>/TestServlet</url-pattern>
+	</servlet-mapping>
+
+
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>index.htm</welcome-file>

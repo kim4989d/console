@@ -5,9 +5,9 @@ import java.util.Map;
 
 /**
  * 
- * @author ±èÇöÈ£
- * ÀÛ¼º¿äÀÏ 2009.1.13
- * ¼³¸í: ÆäÀÌÁö flag 
+ * @author ï¿½ï¿½ï¿½ï¿½È£
+ * ï¿½Û¼ï¿½ï¿½ï¿½ï¿½ï¿½ 2009.1.13
+ * ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ flag 
  */
 
 
@@ -15,28 +15,34 @@ public class CommandManager {
 	
 	public Map getCommandMapping() {
 		Map map = new HashMap();
+		
+		
+		
+		map.put("test",          "console.list.cmd.TestCmd");
+		
+		
 
 		map.put("list",          "console.list.cmd.BoardCmd");
 		map.put("read",          "console.list.cmd.ReadCmd");
 		map.put("write",         "console.list.cmd.InsertCmd");
 		
 		
-		//---------------------------·Î±×ÀÎ---------------------------------------------------	
+		//---------------------------ï¿½Î±ï¿½ï¿½ï¿½---------------------------------------------------	
 		map.put("console_login",         "console.login.cmd.LoginCmd");
 		
-		// È¸¿ø°¡ÀÔ ÆäÀÌÁö 				°èÁ¤µî·Ï ½ÅÃ» ÆäÀÌÁö 
+		// È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 				ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 		map.put("console_join",          "console.consolelogin.cmd.ConsoleJoinCmd");     
 		
-		// ¾ÆÀÌµð Áßº¹ È®ÀÎ ÆäÀÌÁö               °èÁ¤µî·Ï½Ã ¾ÆÀÌµð Áßº¹ °Ë»ç ÇÏ±â 
+		// ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ßºï¿½ È®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½               ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ßºï¿½ ï¿½Ë»ï¿½ ï¿½Ï±ï¿½ 
 		map.put("console_id_repeat",	 "console.consolelogin.cmd.ConsoleIdRepeatCmd");
 		
-		// È¸¿ø °¡ÀÔ È®ÀÎ ÆäÀÌÁö 			°èÁ¤ µî·Ï ¿Ï·á / ½ÇÆÐ 
+		// È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 			ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½ / ï¿½ï¿½ï¿½ï¿½ 
 		map.put("console_joinIns",		"console.consolelogin.cmd.ConsoleJoinInsCmd");	
 		
-		// È¸¿ø°¡ÀÔ(Àåºñ) 
+		// È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½) 
 		map.put("console_join_sys",      "console.consolelogin.cmd.ConsoleJoinSysCmd");
 		
-		// È¸¿ø°¡ÀÔ(Àåºñ)
+		// È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½)
 		map.put("console_join_sys_name", "console.consolelogin.cmd.ConsoleJoinSysNameCmd");   
 		
 	
@@ -45,17 +51,17 @@ public class CommandManager {
 		
 		
 
-//		---------------------------½ÅÃ»ÇöÈ² ---------------------------------------------------	
-		map.put("require_unix_list",          		"console.require.cmd.RequireUnixCmd");		 //unix ÀÛ¾÷½ÅÃ» ÇöÈ² List
-		map.put("unix_work_pop", 					"console.require.cmd.RequireAccountCmd");	 //(pop-up)½ÂÀÎ/¹Ý·Á Ã³¸® Page 			 
-		map.put("unix_equip_list", 					"console.require.cmd.RequireEquipListCmd");  //(pop-up)µî·Ï½Ã½ºÅÛ List 			
-		map.put("unix_update", 						"console.require.cmd.RequireUnixUpdateCmd"); //(pop-up)µî·Ï½Ã½ºÅÛ List 			
+//		---------------------------ï¿½ï¿½Ã»ï¿½ï¿½È² ---------------------------------------------------	
+		map.put("require_unix_list",          		"console.require.cmd.RequireUnixCmd");		 //unix ï¿½Û¾ï¿½ï¿½ï¿½Ã» ï¿½ï¿½È² List
+		map.put("unix_work_pop", 					"console.require.cmd.RequireAccountCmd");	 //(pop-up)ï¿½ï¿½ï¿½ï¿½/ï¿½Ý·ï¿½ Ã³ï¿½ï¿½ Page 			 
+		map.put("unix_equip_list", 					"console.require.cmd.RequireEquipListCmd");  //(pop-up)ï¿½ï¿½Ï½Ã½ï¿½ï¿½ï¿½ List 			
+		map.put("unix_update", 						"console.require.cmd.RequireUnixUpdateCmd"); //(pop-up)ï¿½ï¿½Ï½Ã½ï¿½ï¿½ï¿½ List 			
 
 		
-		map.put("require_user_list", 				"console.require.cmd.RequireUserCmd"); 		 		//user °èÁ¤½ÅÃ» ÇöÈ²  			
-		map.put("require_user_update_list", 		"console.require.cmd.RequireUserUpdateCmd"); 		//user °èÁ¤½ÅÃ» ÇöÈ²  			
+		map.put("require_user_list", 				"console.require.cmd.RequireUserCmd"); 		 		//user ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã» ï¿½ï¿½È²  			
+		map.put("require_user_update_list", 		"console.require.cmd.RequireUserUpdateCmd"); 		//user ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã» ï¿½ï¿½È²  			
 
-		map.put("require_test", 		"console.require.cmd.RequireTestCmd"); 		//user °èÁ¤½ÅÃ» ÇöÈ²  			
+		map.put("require_test", 		"console.require.cmd.RequireTestCmd"); 		//user ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã» ï¿½ï¿½È²  			
 
 //		map.put("require_write",          		"console.require.cmd.InsertCmd");
 //		map.put("require_update",          		"console.require.cmd.UupdateCmd");
@@ -69,29 +75,29 @@ public class CommandManager {
 		
 			
 
-	//---------------------------ÀÛ¾÷°ü¸®---------------------------------------------------	
-		//ÀÛ¾÷°ü¸® ÀÛ¾÷ÁßÀÎ ¼¼¼Ç
+	//---------------------------ï¿½Û¾ï¿½ï¿½ï¿½ï¿½ï¿½---------------------------------------------------	
+		//ï¿½Û¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		map.put("work_list",          "console.work.cmd.WorkCmd");
 		map.put("work_write",          "console.work.cmd.InsertCmd");
 		map.put("work_update",          "console.work.cmd.UupdateCmd");
 		map.put("work_delete",          "console.work.cmd.DeleteCmd");
 	
-		//ÀÛ¾÷°ü¸® ÀÛ¾÷¿Ï·á ¼¼¼Ç			
+		//ï¿½Û¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½Ï·ï¿½ ï¿½ï¿½ï¿½ï¿½			
 		map.put("worked_list",          "console.worked.cmd.WorkedCmd");		
 	//-------------------------------------------------------------------------------------
 	
 		
 		
-	//---------------------------¼­ºñ½º°ü¸®---------------------------------------------------	
+	//---------------------------ï¿½ï¿½ï¿½ñ½º°ï¿½ï¿½ï¿½---------------------------------------------------	
 		/*
-		* name   : ÀÌÃæ¼·
+		* name   : ï¿½ï¿½ï¿½æ¼·
 		* e-mail : 
 		* date   : 2009-02-07 
 		*  
-		* name   : ÃÖ½ÂÁÖ
+		* name   : ï¿½Ö½ï¿½ï¿½ï¿½
 		* e-mail : halfodys@gmail.com
 		* date   : 2009-02-07
-		* memo   : service_list¸¦ require¿¡¼­ »ç¿ëÇÏ°í ÀÖÀ½ service_admin_list·Î ´ëÃ³
+		* memo   : service_listï¿½ï¿½ requireï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ service_admin_listï¿½ï¿½ ï¿½ï¿½Ã³
 		*/
 		
 		map.put("service_list",           "console.service.cmd.ListCmd");
@@ -99,50 +105,50 @@ public class CommandManager {
 		map.put("service_update",         "console.service.cmd.UupdateCmd");
 		map.put("service_delete",         "console.service.cmd.DeleteCmd");
 
-		//¼­ºñ½ºÇöÈ² list Á¶È¸
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È² list ï¿½ï¿½È¸
 		map.put("service_admin_list",     "console.service.cmd.ServiceCmd");
 
-		//¼­ºñ½º Á¤º¸¼öÁ¤  ÆË¾÷
+		//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ï¿½Ë¾ï¿½
 		map.put("service_edit",     	  "console.service.cmd.ServiceUpdateCmd");
 		
-		//¼­ºñ½º Á¤º¸¼öÁ¤ ÆË¾÷
+		//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë¾ï¿½
 		map.put("service_oper_reg",       "console.service.cmd.ServiceOperRegCmd");						
 	//-------------------------------------------------------------------------------------
 	
 		
 		
-	//---------------------------Àåºñ°ü¸®---------------------------------------------------	
-	// 	ÀÛ¼ºÀÚ  : ±è¸íÁø 
-	// 	½Ã½ºÅÛ±¸ºÐ : Àåºñ °ü¸®  
-	//	±â      ´É     : Àåºñ °ü¸® ÀüÃ¼ Cmd 
-	// 	³¯ 	Â¥      :  09 - 1 - 29	
+	//---------------------------ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½---------------------------------------------------	
+	// 	ï¿½Û¼ï¿½ï¿½ï¿½  : ï¿½ï¿½ï¿½ï¿½ï¿½ 
+	// 	ï¿½Ã½ï¿½ï¿½Û±ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½  
+	//	ï¿½ï¿½      ï¿½ï¿½     : ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ Cmd 
+	// 	ï¿½ï¿½ 	Â¥      :  09 - 1 - 29	
 		
 
-		// Àåºñ ¸ñ·Ï(ÀåºñÁ¢¼Ó)   ÇØ´ç Àåºñµé¿¡ ¸®½ºÆ® (ÀåºñÁ¢¼Ó) 
+		// ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)   ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½é¿¡ ï¿½ï¿½ï¿½ï¿½Æ® (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½) 
 		map.put("server_list",          "console.server.cmd.ServerListCmd");    
 		
-		//	½Ã½ºÅÛÀåºñ µî·Ï          ÆäÀÌÁö¿¡¼­ Àåºñ µî·Ï ¹öÆ°À» Å¬¸¯ÇÏ¸é ÇØ´ç ÆäÀÌÁö°¡ ÆË¾÷Çü½ÄÀ¸·Î ¶ç¾îÁÜ
+		//	ï¿½Ã½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½          ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 		map.put("server_req",			"console.server.cmd.ServerListReqCmd"); 
 		
-		// µî·Ï Ã³¸® 			  Àåºñ¸¦ µî·ÏÇØ¼­ ÇØ´ç ¸®½ºÆ® ÆäÀÌÁö·Î ´Ù½Ã ÀÌµ¿ ÇÔ 
+		// ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ 			  ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½Ìµï¿½ ï¿½ï¿½ 
 		map.put("server_req_ok",		"console.server.cmd.ServerReqOkCmd");	
 		
-		//	Áßº¹ È®ÀÎ                     µî·ÏÇÒ Àåºñ id Áßº¹ ºñ±³ 
+		//	ï¿½ßºï¿½ È®ï¿½ï¿½                     ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ id ï¿½ßºï¿½ ï¿½ï¿½ 
 		map.put("server_duplicate",		"console.server.cmd.ServerDuplicateCmd");  
 		
-		//  ¿¢¼¿ ´Ù¿î ·Îµå		 Àåºñ ¸®½ºÆ®¸¦ ¿¢¼¿·Î ´Ù¿î·Îµå 
+		//  ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¿ï¿½ ï¿½Îµï¿½		 ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¿ï¿½Îµï¿½ 
 		map.put("exceldown", 			"console.server.cmd.ServerExcelDownCmd");
 		
-		//	Àåºñ °ü¸® ÆäÀÌÁö         ÇØ´ç Àåºñµé¿¡ ¸®½ºÆ®(»èÁ¦)
+		//	ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½         ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½é¿¡ ï¿½ï¿½ï¿½ï¿½Æ®(ï¿½ï¿½ï¿½ï¿½)
 		map.put("server_del",			"console.server.cmd.ServerListDelCmd");  
 		
-		//  Àåºñ »èÁ¦ ¿Ï·á           »èÁ¦°¡ ¿Ï·áµÇ¸é ÇØ´ç ÆäÀÌÁö·Î ´Ù½Ã ÀÌµ¿ 
+		//  ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½           ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½Ç¸ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½Ìµï¿½ 
 		map.put("server_del_ok",		"console.server.cmd.ServerListDelOkCmd"); 
 
-		//  Àåºñ ¼öÁ¤ 			¼öÁ¤ÇÒ Àåºñ¿¡ ´ëÇÑ ¸ñ·ÏÀ» ºÒ·¯¿È 
+		//  ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ 
 		map.put("server_edit",			"console.server.cmd.ServerEditCmd");
 		
-		 // Àåºñ ¼öÁ¤ ¿Ï·á          ¼öÁ¤ÇÒ Àåºñ ¸ñ·ÏÀ» ´Ù½Ã insert ÇÔ 
+		 // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½          ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù½ï¿½ insert ï¿½ï¿½ 
 		map.put("server_editIns",		"console.server.cmd.ServerEditInsCmd");	  
 		
 		
@@ -154,7 +160,7 @@ public class CommandManager {
 		
 	
 		
-	//---------------------------»ç¿ëÀÚ°ü¸®---------------------------------------------------	
+	//---------------------------ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ï¿½ï¿½---------------------------------------------------	
 		map.put("admin_user_reapeat",          		"console.admin.cmd.AdminUseridReapeatCmd");
 		map.put("admin_user_join",          		"console.admin.cmd.AdminUserJoinCmd");
 		map.put("admin_user_joinins",          		"console.admin.cmd.AdminUserJoinInsCmd");
@@ -162,13 +168,13 @@ public class CommandManager {
 		map.put("admin_user_joinname",          	"console.admin.cmd.AdminUserJoinSysNameCmd");
 		
 		
-		//»ç¿ëÀÚ ¸ñ·Ï º¸¿©ÁÖ±â 
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ 
 		map.put("admin_user_list",       "console.admin.cmd.AdminUserListCmd");
 		
-		//½Ã½ºÅÛ ¸ñ·Ï º¸¿©ÁÖ±â 
+		//ï¿½Ã½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ 
 		map.put("admin_user_system_list",       	"console.admin.cmd.AdminUserSystemListCmd");
 		
-		//»ç¿ëÀÚ ¼öÁ¤ ÇÏ±â 
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï±ï¿½ 
 		map.put("admin_user_edit",		 "console.admin.cmd.AdminUserEditCmd");						//admin.do?cmd=admin_user_edit
 		
 		
@@ -179,36 +185,36 @@ public class CommandManager {
 	//-------------------------------------------------------------------------------------
 		
 
-	//---------------------------ÄÚµå°ü¸®---------------------------------------------------	
+	//---------------------------ï¿½Úµï¿½ï¿½ï¿½ï¿½---------------------------------------------------	
 	/*
-	* name   : ÃÖ½ÂÁÖ
+	* name   : ï¿½Ö½ï¿½ï¿½ï¿½
 	* e-mail : halfodys@gmail.com
 	* date   : 2009-02-07 
 	*/
-	    //ÄÚµå°ü¸® : È¸»çÄÚµå ÇöÈ²
+	    //ï¿½Úµï¿½ï¿½ï¿½ï¿½ : È¸ï¿½ï¿½ï¿½Úµï¿½ ï¿½ï¿½È²
 		map.put("company_list",          "console.company.cmd.CompanyCmd");
-	    //ÄÚµå°ü¸® : Á¦Á¶»çÄÚµå ÇöÈ²
+	    //ï¿½Úµï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ ï¿½ï¿½È²
 		map.put("product_list",          "console.product.cmd.ProductCmd");
 	//-------------------------------------------------------------------------------------		
 		
 			
-	/*************************** ÀÏ¹Ý»ç¿ëÀÚ ¼³Á¤ **********************************************/
+	/*************************** ï¿½Ï¹Ý»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ **********************************************/
 	
-	//-------------------------- Unix ÀÛ¾÷½ÅÃ»   ----------------------------------------------
+	//-------------------------- Unix ï¿½Û¾ï¿½ï¿½ï¿½Ã»   ----------------------------------------------
 		map.put("unix_list", "console.user.regist.cmd.UnixJobCmd");
-	//-------------------------- ÀÏ¹Ý À¯Àú ¸ÞÀÎ  ----------------------------------------------
+	//-------------------------- ï¿½Ï¹ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½  ----------------------------------------------
 		map.put("user_main", 		"console.user_main.cmd.UserMainCmd"); //usermain.do
 		
-	//-------------------------- À©µµ¿ì Àåºñ ¸ñ·Ï   ----------------------------------------------
+	//-------------------------- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½   ----------------------------------------------
 		
-		map.put("user_unix_list", 		"console.user_unix.cmd.UserUnixCmd"); //usermain.do	À¯´Ð½º Àåºñ ¸ñ
+		map.put("user_unix_list", 		"console.user_unix.cmd.UserUnixCmd"); //usermain.do	ï¿½ï¿½ï¿½Ð½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½
 
-	//-------------------------- À©µµ¿ì Àåºñ ¸ñ·Ï   ----------------------------------------------
-		map.put("user_win_list", 	"console.user_window.cmd.UserWindowCmd"); //usermain.do À©µµ¿ì Àåºñ ¸ñ·Ï
+	//-------------------------- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½   ----------------------------------------------
+		map.put("user_win_list", 	"console.user_window.cmd.UserWindowCmd"); //usermain.do ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	
-	//-------------------------- ÀÏ¹Ý »ç¿ëÀÚ °Ô½ÃÆÇ    ----------------------------------------------	
+	//-------------------------- ï¿½Ï¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô½ï¿½ï¿½ï¿½    ----------------------------------------------	
 		map.put("user_main"	   , 	"console.user_main.cmd.UserBoardCmd"); //usermain.do
-		map.put("user_board"	,	"console.user_board.cmd.UserBoardCmd");//°Ô½ÃÆÇ 
+		map.put("user_board"	,	"console.user_board.cmd.UserBoardCmd");//ï¿½Ô½ï¿½ï¿½ï¿½ 
 		
 		map.put("user_uni_systemList",          "console.usermode.cmd.UserUniSystemListCmd");
 		
